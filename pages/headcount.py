@@ -255,7 +255,7 @@ with parameter:
     
     apa = mid_col.number_input('Average Speed of Answer in Seconds', min_value = 0, value=100)
 
-    occupancy = right_col.number_input('Maximum Occupany %', min_value=0.0, max_value=100.0, value=80.0, step=1.0)/100
+    occupancy = right_col.number_input('Maximum Occupancy %', min_value=0.0, max_value=100.0, value=80.0, step=1.0)/100
     
     shrinkage = right_col.number_input('Shrinkage %', min_value=0.0, max_value=100.0, value=30.0, step=1.0)/100
       
