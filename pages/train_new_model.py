@@ -10,7 +10,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-
+import os
 import joblib
 import pickle
 warnings.filterwarnings("ignore")
@@ -92,7 +92,7 @@ with fine_tunning:
 
     
     pipe_hc = Pipeline([('scaler', ss), ('reg', gs.best_params_)])
-    import os
+    
 
     dirname = os.path.dirname(__file__)
     filename1 = os.path.join(dirname, 'hc_test.pkl')
